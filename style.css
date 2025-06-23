@@ -1,0 +1,68 @@
+/* сброс */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #1f2229;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+button {
+  background: transparent;
+  border: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* цвета */
+:root {
+  --black: #000000;
+  --white: #e1dfdf;
+  --blue: #3fcbff;
+  --pink: #ff59a3;
+  --green: #d7ff38;
+  --green2: #38ffa6;
+  --violet: #c882ff;
+  --textBlack: #1f2229;
+  --textWhite: #e1dfdf;
+  --textGray: #8f9399;
+}
+
+.buttonUi {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.buttonUi:hover {
+  background-color: #000000;
+  color: white;
+}
+.buttonUi:active {
+  transform: scale(0.9);
+}
