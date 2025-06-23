@@ -1,0 +1,37 @@
+.hero {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__left-promotion {
+  margin-top: 27px;
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffff;
+  line-height: 150%;
+}
+.hero__left-title {
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 24px;
+  color: #ffff;
+  max-width: 370px;
+}
+.hero__left-title span {
+  color: var(--blue);
+}
+.hero__left-rate {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffff;
+  max-width: 340px;
+  margin-bottom: 26px;
+}
+.hero__left-button {
+  border-radius: 30px;
+  width: 209px;
+  height: 60px;
+}
