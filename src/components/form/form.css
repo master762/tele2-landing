@@ -1,0 +1,129 @@
+.section {
+  margin-top: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form {
+  max-width: 348px;
+  width: 100%;
+}
+.form__title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #ffff;
+  max-width: 320px;
+  margin-bottom: 12px;
+}
+.form__title span {
+  color: var(--blue);
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-height: 50px;
+}
+.form__input-label {
+  color: var(--textGray);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+.form__input-input {
+  border-bottom: 2px solid #8f9399;
+  background: transparent;
+  transition: 0.3s;
+  color: var(--textWhite);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 138%;
+}
+.form__input-input:focus {
+  border-color: #ffff;
+}
+.form__personal {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  margin-top: 24px;
+}
+.form__personal-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 24px;
+  min-width: 24px;
+  border: 2px solid #ffff;
+  cursor: pointer;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+.form__personal-checkbox::before {
+  content: "";
+  width: 14px;
+  height: 11px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L5 9L13 1" stroke="white" stroke-width="2"/></svg>');
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.form__personal-checkbox:checked::before {
+  opacity: 1;
+}
+.form__personal-description {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 138%;
+  font-weight: 400;
+  max-width: 256px;
+}
+.form__personal-description a {
+  text-decoration: underline;
+}
+.form__button {
+  width: 228px;
+  height: 48px;
+  border-radius: 48px;
+  background-color: var(--textWhite);
+  margin-top: 10px;
+}
+.steps {
+  max-width: 598px;
+  width: 100%;
+  min-height: 354px;
+}
+.steps__step {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.steps__step-number {
+  min-width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border: 2px solid #39404c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps__step-number span {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+}
+.steps__step p {
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.steps__step a {
+  text-decoration: underline;
+}
