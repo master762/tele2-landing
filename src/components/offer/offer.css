@@ -1,0 +1,88 @@
+.offer__title {
+  margin-top: 150px;
+  margin-bottom: 24px;
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #ffff;
+}
+.offer__paragraph {
+  color: #ffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  max-width: 665px;
+  margin-bottom: 56px;
+}
+.offer__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offer__card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 324px;
+  width: 100%;
+  transition: all 0.3s ease;
+  animation: card-float 6s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.offer__card div {
+  background-color: #39404c;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: icon-pulse 3s ease-in-out infinite;
+}
+
+/* Анимации*/
+@keyframes card-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes icon-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.offer__card:hover,
+.offer__card:hover div {
+  animation: none;
+}
+.offer__card:nth-child(1) {
+  animation-delay: 0s;
+}
+.offer__card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.offer__card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.offer__card:hover div {
+  background-color: var(--blue);
+}
+.offer__card:hover svg {
+  filter: brightness(2) contrast(2);
+}
+.offer__card p {
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
