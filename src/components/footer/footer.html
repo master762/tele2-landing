@@ -1,32 +1,41 @@
-<link rel="stylesheet" href="/src/components/footer/footer.css">
-<footer class="footer container">
-    <div class="footer__top">
-        <div class="footer__top-social">
-            <div><img src="/images/x.svg" alt=""></div>
-            <div><img src="/images/vk.svg" alt=""></div>
-            <div><img src="/images/facebook.svg" alt=""></div>
+<link rel="stylesheet" href="/src/components/footer/footer.css" />
+
+<footer class="footer container" aria-label="Подвал сайта">
+    <section class="footer__top">
+        <ul class="footer__social" aria-label="Социальные сети">
+            <li class="footer__social-item">
+                <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+                    <img src="/images/x.svg" alt="X (Twitter)" />
+                </a>
+            </li>
+            <li class="footer__social-item">
+                <a href="#" class="footer__social-link" aria-label="VK">
+                    <img src="/images/vk.svg" alt="ВКонтакте" />
+                </a>
+            </li>
+            <li class="footer__social-item">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <img src="/images/facebook.svg" alt="Facebook" />
+                </a>
+            </li>
+        </ul>
+        <div class="footer__conditions" aria-label="Условия акции">
+            <p class="footer__conditions-text">Полные условия акции</p>
+            <span class="footer__age" aria-label="Возрастное ограничение">16+</span>
         </div>
-        <div class="footer__top-conditions">
-            <p>Полные условия акции</p>
-            <div><span>16+</span></div>
-        </div>
-    </div>
-    <div class="footer__bottom">
-        <div class="footer__bottom-wrapper">
-            <a href="/" class="footer__bottom-logo">
-                <img src="/images/logo.svg" class="header__logo-image" alt="Tele2">
+    </section>
+    <section class="footer__bottom">
+        <div class="footer__column">
+            <a href="/" class="footer__logo" aria-label="Главная страница Tele2">
+                <img src="/images/logo.svg" alt="Tele2 логотип" />
             </a>
-            <p class="footer__bottom-copyright">
-                © Tele2 Россия, 2021
-            </p>
+            <p class="footer__copyright">© Tele2 Россия, 2021</p>
         </div>
-        <div class="footer__bottom-wrapper">
-            <p class="footer__bottom-copyright">
-                Сделано в Студии Олега Чулакова
-            </p>
-            <a href="/" class="footer__bottom-logo">
-                <img src="/images/logoChulakov.svg" class="header__logo-image" alt="Tele2">
+        <div class="footer__column">
+            <p class="footer__copyright">Сделано в Студии Олега Чулакова</p>
+            <a href="/" class="footer__logo" aria-label="Сайт студии Олега Чулакова">
+                <img src="/images/logoChulakov.svg" alt="Логотип студии Чулакова" />
             </a>
         </div>
-    </div>
+    </section>
 </footer>

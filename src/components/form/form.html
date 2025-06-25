@@ -1,35 +1,45 @@
 <link rel="stylesheet" href="/src/components/form/form.css">
 <script src="/src/components/form/form.js" defer></script>
-<section class="section container">
-    <form class="form">
-        <h1 class="form__title">Несколько шагов
-            <span> и 1 ТБ — ваш</span>
+
+<section class="section container" aria-labelledby="form-title">
+    <form class="form" action="#" method="post">
+        <h1 class="form__title" id="form-title">
+            Несколько шагов <span>и 1 ТБ — ваш</span>
         </h1>
-        <div class="form__input">
-            <label class="form__input-label" for="">Номер телефона</label>
-            <input class="form__input-input" type="tel">
-        </div>
-        <div class="form__personal">
-            <input class="form__personal-checkbox" type="checkbox" name="" id="">
-            <p class="form__personal-description">Даю согласие на обработку персональных данных. <a href="">Условия
-                    соглашения.</a></p>
-        </div>
-        <button class="form__button buttonUi"><span>Выслать промокод</span></button>
+        <fieldset class="form__group">
+            <label class="form__input-label" for="phone">Номер телефона</label>
+            <input class="form__input-input" type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel"
+                required aria-required="true">
+        </fieldset>
+        <fieldset class="form__personal">
+            <input class="form__personal-checkbox" type="checkbox" name="consent" id="consent" required
+                aria-required="true">
+            <label class="form__personal-description" for="consent">
+                Даю согласие на обработку персональных данных.
+                <a href="#" rel="noopener noreferrer">Условия соглашения.</a>
+            </label>
+        </fieldset>
+        <button class="form__button buttonUi" type="submit">
+            <span>Выслать промокод</span>
+        </button>
     </form>
-    <div class="steps">
-        <div class="steps__step">
+    <ol class="steps">
+        <h1 class="steps__title-adaptation">Оставьте номер и <span>1 ТБ — ваш</span></h1>
+        <li class="steps__step">
             <div class="steps__step-number"><span>1</span></div>
-            <p>Ведите свой номер телефона, затем дождитесь смс с промокодом для получения Тб</p>
-        </div>
-        <div class="steps__step">
+            <p>Введите свой номер телефона, затем дождитесь смс с промокодом для получения ТБ</p>
+        </li>
+        <li class="steps__step">
             <div class="steps__step-number"><span>2</span></div>
-            <p>Перейдите на <a href="">сайт Tele2 </a> и активируйте промокод при подключении на тариф «Мой Онлайн+»
+            <p>
+                Перейдите на
+                <a href="https://rostov.tele2.ru" target="_blank" rel="noopener noreferrer">сайт Tele2</a>
+                и активируйте промокод при подключении на тариф «Мой Онлайн+»
             </p>
-        </div>
-        <div class="steps__step">
+        </li>
+        <li class="steps__step">
             <div class="steps__step-number"><span>3</span></div>
-            <p>Используйте свой подарочный ТБ от Tele2 в течение всего года
-            </p>
-        </div>
-    </div>
+            <p>Используйте свой подарочный ТБ от Tele2 в течение всего года</p>
+        </li>
+    </ol>
 </section>

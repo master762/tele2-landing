@@ -1,36 +1,34 @@
 <link rel="stylesheet" href="/src/components/header/header.css">
 <script src="/src/components/header/header.js" defer></script>
 
-<header class="header">
-    <a href="/" class="header__logo">
-        <img src="/images/logo.svg" class="header__logo-image" alt="Tele2">
-    </a>
-    <button class="header__location">
-        <img src="/images/location.svg" class="header__location-icon" alt="location">
-        <span class="header__location-text">Санкт-Петербург</span>
-    </button>
-    <div class="modal">
-        <div class="modal-wrapper container">
-            <h1 class="modal-wrapper-title">Выберите город</h1>
-            <div class="modal-wrapper-cities">
-                <div>
-                    <li>Воронеж</li>
-                    <li>иркутск</li>
-                    <li>Кемерово</li>
-                    <li>Красноярск</li>
-                </div>
-                <div>
-                    <li>Москва</li>
-                    <li>Н.Новгород</li>
-                    <li>Новосибирск</li>
-                    <li>Пермь</li>
-                </div>
-                <div>
-                    <li>Ростов-на-Дону</li>
-                    <li>Санкт Петербург</li>
-                    <li>Челябинск</li>
-                </div>
-            </div>
+<header class="header" role="banner">
+    <nav class="header__nav container" aria-label="Основная навигация">
+        <a href="/" class="header__logo" aria-label="Главная страница Tele2">
+            <img src="/images/logo.svg" class="header__logo-image" alt="Логотип Tele2">
+        </a>
+
+        <button class="header__location" aria-haspopup="dialog" aria-expanded="false">
+            <img src="/images/location.svg" class="header__location-icon" alt="Иконка местоположения">
+            <span class="header__location-text">Санкт-Петербург</span>
+        </button>
+    </nav>
+
+    <dialog class="modal" aria-modal="true" role="dialog">
+        <div class="modal__wrapper container">
+            <h1 class="modal__title">Выберите город</h1>
+            <ul class="modal__city-list">
+                <li class="modal__city-item" tabindex="0">Воронеж</li>
+                <li class="modal__city-item" tabindex="0">Иркутск</li>
+                <li class="modal__city-item" tabindex="0">Кемерово</li>
+                <li class="modal__city-item" tabindex="0">Красноярск</li>
+                <li class="modal__city-item" tabindex="0">Москва</li>
+                <li class="modal__city-item" tabindex="0">Н.Новгород</li>
+                <li class="modal__city-item" tabindex="0">Новосибирск</li>
+                <li class="modal__city-item" tabindex="0">Пермь</li>
+                <li class="modal__city-item" tabindex="0">Ростов-на-Дону</li>
+                <li class="modal__city-item" tabindex="0">Санкт-Петербург</li>
+                <li class="modal__city-item" tabindex="0">Челябинск</li>
+            </ul>
         </div>
-    </div>
+    </dialog>
 </header>

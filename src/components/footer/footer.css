@@ -1,64 +1,101 @@
+.footer {
+  padding-block: 2rem;
+}
 .footer__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(225, 223, 223, 0.2);
+  padding-block-end: 0.5rem;
+  border-block-end: 1px solid rgba(225, 223, 223, 0.2);
 }
-.footer__top-social {
+.footer__social {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.footer__top-social div {
-  width: 40px;
-  height: 40px;
+.footer__social-item {
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+}
+.footer__social-link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
-.footer__top-conditions {
+.footer__conditions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
-.footer__top-conditions p {
-  color: var(--textWhite);
+.footer__conditions-text {
+  font-size: clamp(0.75rem, 1vw, 0.8125rem);
   font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
+  line-height: 1.38;
+  color: var(--textWhite);
 }
-.footer__top-conditions div {
-  width: 32px;
-  height: 32px;
-  flex-shrink: 0;
-  display: flex;
+.footer__age {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #ffff;
+  inline-size: 2rem;
+  block-size: 2rem;
+  border: 2px solid #fff;
   border-radius: 50%;
-}
-.footer__top-conditions div span {
   font-weight: 700;
-  line-height: 120%;
-  font-size: 12px;
-  color: #ffff;
+  font-size: clamp(0.6875rem, 1vw, 0.75rem);
+  color: #fff;
+  flex-shrink: 0;
 }
 .footer__bottom {
-  min-height: 120px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  min-block-size: 7.5rem;
+  margin-block-start: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.footer__bottom-wrapper {
+.footer__column {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 }
-.footer__bottom-copyright {
-  color: var(--textWhite);
-  opacity: 0.5;
+.footer__logo img {
+  max-block-size: 2rem;
+  object-fit: contain;
+}
+.footer__copyright {
+  font-size: clamp(0.75rem, 1vw, 0.8125rem);
+  line-height: 1.38;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
+  opacity: 0.5;
+  color: var(--textWhite);
+}
+@media (max-width: 400px) {
+  .footer {
+    padding: 0;
+  }
+  .footer__social-item {
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+  }
+  .footer__logo {
+    inline-size: 5rem;
+    block-size: auto;
+  }
+  .footer__column {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer__column:last-child {
+    display: none;
+  }
+  .footer__top {
+    padding-block-end: 0.75rem;
+  }
 }

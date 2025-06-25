@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background-color: #1f2229;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -12,17 +13,24 @@ a {
 }
 ul,
 ol,
-li {
-  list-style: none;
+p,
+input,
+figure {
   margin: 0;
   padding: 0;
 }
+li {
+  list-style: none;
+}
 h1,
 h2,
-h3,
-p,
-input {
+h3 {
   margin: 0;
+  font-family: "ABeeZee", sans-serif;
+}
+p,
+span {
+  font-family: "Abel", sans-serif;
 }
 button {
   background: transparent;
@@ -36,9 +44,22 @@ img {
   user-select: none;
 }
 
+/* шрифты */
+@font-face {
+  font-family: "Abel";
+  src: url("/src/assets/fonts/Abel-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 .container {
   width: 77.78%;
   margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .container {
+    width: 89.38%;
+  }
 }
 
 /* цвета */
@@ -61,7 +82,10 @@ img {
   line-height: 22px;
   background-color: #ffff;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .buttonUi:hover {
   background-color: #000000;

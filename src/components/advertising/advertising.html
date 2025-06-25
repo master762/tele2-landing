@@ -1,18 +1,23 @@
 <link rel="stylesheet" href="/src/components/advertising/advertising.css">
 <section class="advertising container">
-    <div class="advertising__text">
-        <h1 class="advertising__text-title">Заходите на сайт Tele2</h1>
-        <p class="advertising__text-paragraph">Перейдите в магазин, оформите тариф «Мой онлайн+» и на страничке
-            активации введите ваш промокод. Готово! </p>
-        <button class="advertising__text-button buttonUi"><a href="https://rostov.tele2.ru" target="_blank"
-                rel="noopener noreferrer" class="advertising__text-button buttonUi">
-                <span>Оформить тариф</span>
-            </a></button>
+    <div class="advertising__content">
+        <h1 class="advertising__title">Заходите на сайт Tele2</h1>
+        <p class="advertising__description">
+            Перейдите в магазин, оформите тариф «Мой онлайн+» и на страничке активации введите ваш промокод. Готово!
+        </p>
+        <a href="https://rostov.tele2.ru" target="_blank" rel="noopener noreferrer" class="advertising__button buttonUi"
+            role="button" aria-label="Оформить тариф на сайте Tele2">
+            Оформить тариф
+        </a>
     </div>
-    <div class="advertising__image">
-        <div class="advertising__image-ellipse">
-            <img class="advertising__image-phone" src="/images/Phone.png" alt="">
-            <img class="advertising__image-sim" src="/images/Sim.png" alt="">
+    <figure class="advertising__visual">
+        <div class="advertising__ellipse">
+            <img src="/images/Phone.png" alt="Смартфон" class="advertising__phone" loading="lazy" />
+            <img src="/images/Sim.png" alt="SIM-карта" class="advertising__sim" loading="lazy" />
         </div>
-    </div>
+    </figure>
+    <a href="https://rostov.tele2.ru" target="_blank" rel="noopener noreferrer"
+        class="advertising__button-adaptation buttonUi" role="button" aria-label="Оформить тариф на сайте Tele2">
+        Оформить тариф
+    </a>
 </section>

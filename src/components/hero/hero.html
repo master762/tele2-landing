@@ -1,12 +1,19 @@
-<link rel="stylesheet" href="/src/components/hero/hero.css">
-<section class="hero container">
+<link rel="stylesheet" href="/src/components/hero/hero.css" />
+
+<section class="hero container" aria-labelledby="hero-title">
     <div class="hero__left">
-        <p class="hero__left-promotion">Акция продлится с 1 по 20 сентября</p>
-        <h1 class="hero__left-title">ЭТО ВАША <span>ВЫГОДА!</span></h1>
-        <h2 class="hero__left-rate">Тариф «Мой онлайн+» и 1 ТБ трафика в подарок для новых абонентов</h2>
-        <button class="hero__left-button buttonUi"><span>Принять участие</span></button>
+        <p class="hero__left-promotion" aria-label="Сроки акции">Акция продлится с 1 по 20 сентября</p>
+        <h1 id="hero-title" class="hero__left-title">
+            ЭТО ВАША <span class="hero__highlight">ВЫГОДА!</span>
+        </h1>
+        <p class="hero__left-rate">
+            Тариф «Мой онлайн+» и 1 ТБ трафика в подарок для новых абонентов
+        </p>
+        <button class="hero__left-button buttonUi" type="button" aria-label="Принять участие в акции">
+            <span>Принять участие</span>
+        </button>
     </div>
-    <div class="hero__right">
-        <img src="/images/Boss.png" alt="" class="hero__right-image">
+    <div class="hero__right" aria-hidden="true">
+        <img src="/images/Boss.png" alt="" class="hero__right-image" />
     </div>
 </section>
