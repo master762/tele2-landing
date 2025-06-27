@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/src/components/hero/hero.css" />
-
+<script src="/src/components/hero/hero.js" defer></script>
 <section class="hero container" aria-labelledby="hero-title">
     <div class="hero__left">
         <p class="hero__left-promotion" aria-label="Сроки акции">Акция продлится с 1 по 20 сентября</p>
@@ -16,4 +16,32 @@
     <div class="hero__right" aria-hidden="true">
         <img src="/images/Boss.png" alt="" class="hero__right-image" />
     </div>
+    <dialog class="hero__modal" aria-modal="true" role="dialog">
+        <form action="" class="hero__modal-form">
+            <fieldset class="form__wrapper">
+                <label class="form__label" for=""></label>
+                <input id="input" class="form__input" type="tel">
+            </fieldset>
+            <fieldset class="form__policy">
+                <input class="form__policy-checkbox" type="checkbox" name="consent" id="error" required
+                    aria-required="true" aria-describedby="consent-error">
+                <label class="form__policy-description" for="consent">
+                    Даю согласие на обработку персональных данных.
+                    <a href="#" rel="noopener noreferrer">Условия соглашения.</a>
+                </label>
+                <div id="consent-error" class="form__error" aria-live="polite"></div>
+            </fieldset>
+            <div class="form__submit">
+                <button class="form__submit-button buttonUi" type="submit" aria-live="polite">
+                    <span>Выслать промокод</span>
+                </button>
+                <div class="form__submit-success" hidden>
+                    <div class="form__submit-elipse">
+                        <img src="/images/accept.svg" alt="">
+                    </div>
+                    Промокод выслан на ваш номер
+                </div>
+            </div>
+        </form>
+    </dialog>
 </section>

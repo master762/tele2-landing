@@ -20,6 +20,10 @@
   inline-size: 2.5rem;
   block-size: 2.5rem;
 }
+.footer__social-item:hover img {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(57%) saturate(2000%)
+    hue-rotate(196deg) brightness(97%) contrast(106%);
+}
 .footer__social-link {
   display: flex;
   justify-content: center;
@@ -37,6 +41,9 @@
   font-weight: 400;
   line-height: 1.38;
   color: var(--textWhite);
+}
+.footer__conditions-text:hover {
+  color: var(--blue);
 }
 .footer__age {
   display: inline-flex;
@@ -69,6 +76,7 @@
   max-block-size: 2rem;
   object-fit: contain;
 }
+
 .footer__copyright {
   font-size: clamp(0.75rem, 1vw, 0.8125rem);
   line-height: 1.38;

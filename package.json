@@ -11,5 +11,8 @@
   "devDependencies": {
     "vite": "^6.3.5",
     "vite-plugin-include-html": "^1.0.0"
+  },
+  "dependencies": {
+    "imask": "^7.6.1"
   }
 }

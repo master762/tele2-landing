@@ -89,6 +89,9 @@
 .form__personal-description a {
   text-decoration: underline;
 }
+.form__personal-description a:hover {
+  color: var(--blue);
+}
 .form__button {
   inline-size: 228px;
   block-size: 48px;
@@ -146,6 +149,43 @@
 .steps__step a {
   text-decoration: underline;
 }
+.steps__step a:hover {
+  color: var(--blue);
+}
+.form__success-message {
+  display: none;
+  margin-block-start: 3rem;
+  background-color: #262b36;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  align-items: center;
+  color: var(--textWhite);
+  font-size: 0.875rem;
+  line-height: 138%;
+  font-weight: 400;
+  gap: 0.75rem;
+}
+
+.form__success-message:not([hidden]) {
+  display: flex;
+}
+.form__success-elipse {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--blue);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__error-message {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .steps__step p {
     width: 305px;

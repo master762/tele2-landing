@@ -1,27 +1,38 @@
 <link rel="stylesheet" href="/src/components/form/form.css">
-<script src="/src/components/form/form.js" defer></script>
+<script src="/src/components/form/form.js"></script>
+<script src="https://unpkg.com/imask"></script>
 
 <section class="section container" aria-labelledby="form-title">
-    <form class="form" action="#" method="post">
+    <form class="form" id="form" action="#" method="post" novalidate>
         <h1 class="form__title" id="form-title">
             Несколько шагов <span>и 1 ТБ — ваш</span>
         </h1>
         <fieldset class="form__group">
             <label class="form__input-label" for="phone">Номер телефона</label>
             <input class="form__input-input" type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel"
-                required aria-required="true">
+                required aria-required="true" aria-describedby="phone-error">
+            <div id="phone-error" class="form__error-message" aria-live="polite"></div>
         </fieldset>
         <fieldset class="form__personal">
             <input class="form__personal-checkbox" type="checkbox" name="consent" id="consent" required
-                aria-required="true">
+                aria-required="true" aria-describedby="consent-error">
             <label class="form__personal-description" for="consent">
                 Даю согласие на обработку персональных данных.
                 <a href="#" rel="noopener noreferrer">Условия соглашения.</a>
             </label>
+            <div id="consent-error" class="form__error-message" aria-live="polite"></div>
         </fieldset>
-        <button class="form__button buttonUi" type="submit">
-            <span>Выслать промокод</span>
-        </button>
+        <div class="form__status">
+            <button class="form__button buttonUi" type="submit" aria-live="polite">
+                <span>Выслать промокод</span>
+            </button>
+            <div class="form__success-message" hidden>
+                <div class="form__success-elipse">
+                    <img src="/images/accept.svg" alt="">
+                </div>
+                Промокод выслан на ваш номер
+            </div>
+        </div>
     </form>
     <ol class="steps">
         <h1 class="steps__title-adaptation">Оставьте номер и <span>1 ТБ — ваш</span></h1>
